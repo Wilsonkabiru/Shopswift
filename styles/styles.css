@@ -1,0 +1,422 @@
+body
+{
+    display: block;
+    background: white;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    padding:  10px 15px;
+    background-color: gray;
+    background-size: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    color: blue;
+    word-spacing: -9px;
+    margin: 0;
+}
+header .mobile
+{
+    display: none;
+}
+a
+{
+    display: inline-block;
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li
+{
+    display: inline;
+    margin-right: 20px;
+    align-items: center;
+}
+/*RESPONSIVE RULES*/
+
+@media screen and (max-width: 715px) 
+{
+    header
+    {
+        height: 200px;
+    }
+    header .mobile
+    {
+        display: inline-block;
+    }
+    header .desktop
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    body
+    {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 900px)
+{
+    body
+    {
+        font-size: 12px;
+    }
+    section
+    {
+    background: white;
+    color: blue;
+    font-size: 12px;
+    padding: -20px -20px;
+    margin: 60px 200px 60px 450px;
+    position:right;
+    max-width: 500px;
+    height: 100%;
+    display: inline-block;
+    flex-direction: column;
+}
+}
+header .mobile
+{
+    display: none;
+}
+ul
+{
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+li
+{
+    display: flex;
+    margin: 0 20px 0 20px;
+}
+.small-icon
+{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;  
+}
+li:hover
+{
+    background-color:  none;
+}
+a
+{
+    text-decoration: none;
+    color:blue;
+    font-weight: 600;
+}
+a:hover
+{
+    text-decoration: underline;
+    background-color: white;
+}
+section
+{
+    background: white;
+    color: blue;
+    font-size: 12px;
+    padding: -20px -20px;
+    margin: 60px 200px 60px 450px;
+    position:right;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+footer
+{
+    position: relative;
+    z-index: 1;
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 20px 80px;
+    text-align: center;
+    height: 130px;
+}
+button
+{
+    border-radius: 5px;
+    background-color: rgb(7, 240, 77);
+    color: blue;
+    font-size:1.2em;
+    font-weight: 600;
+    text-align: right;
+}
+button:hover
+{
+    background-color: rgb(236, 129, 15);
+}
+.image-container
+{
+    border: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+}
+.gallery
+{
+    display:inline-block;
+    margin-bottom: 30px;
+}
+img
+{
+    width: 65px;
+    height: 40%;
+}
+.price
+{
+    font-weight:bold;
+    color: blue;
+}
+
+.reviews 
+{
+    font-size: 14px;
+    color: blue;
+    font-weight: bold;
+}
+
+.image-container:hover
+{
+    background-color:rgb(236, 129, 15);
+}
+features
+{
+    text-align: left;
+}
+
+#contact, #contact-form
+{
+    body
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        background: color #f0f0f0;
+        margin: 20px;
+        padding: 0;
+        height: 80px;
+        width: 80px;
+    }
+    header
+    {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding:20px;
+    }
+    section
+    {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+    h1,h2,h3
+    {
+        color: #333;
+    }
+    label
+    {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea
+    {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        text-align: center;
+    }
+    input[type="submit"]
+    {
+        background-color: rgb(7, 240, 77);
+        color: blue;
+        border-radius: 5px;
+        font-size:1.2em;
+        font-weight: 600;
+        text-align: right;
+    }
+    input[type="submit"]:hover
+    {
+        background-color: rgb(236, 129, 15);
+    }
+}
+#contact-form
+{
+    margin: 20px;
+}
+.form-group
+{
+    margin: 20px;
+}
+label,span
+{
+    display: block;
+    font-weight: bold;
+}
+input[type="text"],input[type="email"]
+{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#contact
+{
+    margin: 20px;
+}
+
+#about-content
+{
+    body
+    {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    header
+    {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding:20px;
+    }
+    section
+    {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+    h1,h2,h3,h4
+    {
+        color:#333;
+    }
+    ul
+    {
+        list-style-type:disc;
+        margin-left: 20px;
+    }
+}
+#about-content
+{
+    body
+    {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    header
+    {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding:20px;
+    }
+    section
+    {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+    h1,h2,h3,h4
+    {
+        color:#333;
+    }
+    ul
+    {
+        list-style-type:disc;
+        margin-left: 20px;
+    }
+}
+#about-content
+{
+    text-align: normal;
+    line-height: 1.5;
+    margin: 0 0 1em;
+    direction: ltr;
+}
+
+/*#payment-form
+{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}*/
+.action
+{
+    display: grid;
+}
+.debit
+{
+    margin: 20px;
+}
+.inputBox
+{
+    display: grid;
+    margin: 20px;
+}
+:root {
+    view-transition-name: root;
+}
+#add-to-cart-button
+{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+#add-to-cart-button:hover
+{
+    background-color: gray;
+}
+#cart-count{
+    position: absolute;
+    top: 15px;
+    right: 20px; 
+    background-color: none;
+    color: red;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+#success
+{
+    height: 400px;
+    margin:0 180px 30px 500px;
+}
+#sc
+{
+    font-style: normal;
+    height: 100px;
+}

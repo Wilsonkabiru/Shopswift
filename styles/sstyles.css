@@ -1,0 +1,197 @@
+body
+{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header
+{
+    padding:  10px 15px;
+    background-color: gray;
+    background-size: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    color: blue;
+    word-spacing: -9px;
+    margin: 0;
+}
+header .mobile
+{
+    display: none;
+}
+a
+{
+    display: inline-block;
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li
+{
+    display: inline;
+    margin-right: 20px;
+    align-items: center;
+}
+/*RESPONSIVE RULES*/
+
+@media screen and (max-width: 715px) 
+{
+    header
+    {
+        height: 200px;
+    }
+    header .mobile
+    {
+        display: inline-block;
+    }
+    header .desktop
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    body
+    {
+        font-size: 15px;
+    }
+}
+header .mobile
+{
+    display: none;
+}
+ul
+{
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+li
+{
+    display:inline-block;
+    margin: 0 15px 0 15px;
+}
+li:hover
+{
+    background-color:  none;
+}
+a
+{
+    text-decoration: none;
+    color:blue;
+    font-weight: 600;
+}
+a:hover
+{
+    text-decoration: underline;
+    background-color: white;
+}
+section
+{
+    background: white;
+    color: blue;
+    font-size: 12px;
+    display: inline-block;
+    float:none;
+    height:400px;
+}
+footer
+{
+    position: relative;
+    z-index: 1;
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 20px 80px;
+    text-align: center;
+    height: 130px;
+}
+button
+{
+    border-radius: 5px;
+    background-color: rgb(7, 240, 77);
+    color: blue;
+    font-size:1.2em;
+    font-weight: 600;
+    text-align: right;
+}
+button:hover
+{
+    background-color: rgb(236, 129, 15);
+}
+#signin-section
+{
+    margin: 20px;
+}
+.action
+{
+    display: grid;
+}
+.ssi
+{
+    margin: 20px;
+}
+.ssu
+{
+    margin: 20px;
+}
+label
+{
+    display: block;
+    font-weight: bold;
+}
+input[type="text"],input[type="email"]
+{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.sc-container
+{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sc-container img
+{
+    width: 200px;
+    margin: 2rem 0;
+}
+#success
+{
+    height: 400px;
+    margin:0 180px 30px 500px;
+}
+#sc
+{
+    height: 100px;
+}
+#py
+{
+    background: white;
+    color: blue;
+    font-size: 12px;
+    padding: -20px -20px;
+    margin: 60px 200px 60px 450px;
+    position:right;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+img
+{
+    width: 65px;
+    height: 30%;
+}

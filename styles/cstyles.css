@@ -1,0 +1,280 @@
+body
+{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header
+{
+    padding:  10px 15px;
+    background-color: gray;
+    background-size: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    color: blue;
+    word-spacing: -9px;
+    margin: 0;
+}
+header .mobile
+{
+    display: none;
+}
+a
+{
+    display: inline-block;
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li
+{
+    display: inline;
+    margin-right: 20px;
+    align-items: center;
+}
+/*RESPONSIVE RULES*/
+
+@media screen and (max-width: 715px) 
+{
+    header
+    {
+        height: 200px;
+    }
+    header .mobile
+    {
+        display: inline-block;
+    }
+    header .desktop
+    {
+        display: none;
+    }
+    #cart-count
+    {
+        position: absolute;
+        top: 85px;
+        right: 55px; 
+        background-color: red;
+        border-radius: 3px;
+        color: blue;
+        padding: 4px 8px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    body
+    {
+        font-size: 15px;
+    }
+}
+header .mobile
+{
+    display: none;
+}
+ul
+{
+    margin: 10px;
+    padding: 0;
+    list-style-type: none;
+}
+li
+{
+    display:inline-block;
+    margin: 0 15px 0 15px;
+}
+li:hover
+{
+    background-color:  none;
+}
+a
+{
+    text-decoration: none;
+    color:blue;
+    font-weight: 600;
+    margin:10px;
+}
+a:hover
+{
+    text-decoration: underline;
+    background-color: white;
+}
+section
+{
+    background: white;
+    color: blue;
+    font-size: 12px;
+    min-height: 400px;
+    height:100%;
+    font-weight: bold;
+}
+footer
+{
+    position: relative;
+    z-index: 1;
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 20px 80px;
+    text-align: center;
+    height: 130px;
+}
+button
+{
+    border-radius: 5px;
+    background-color: rgb(7, 240, 77);
+    color: blue;
+    font-size:1.2em;
+    font-weight: 600;
+    text-align: right;
+}
+button:hover
+{
+    background-color: rgb(236, 129, 15);
+}
+#cart-container
+{
+    width: 200px;
+    float: right;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#cart
+{
+    margin-bottom: 10px;
+}
+#cart-items
+{
+    margin: 10px;
+}
+#proceed-to-pay
+{
+    margin: 5px 0 10px 10px;
+}
+.small-icon
+{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-top: -4px;
+    cursor: pointer;
+}
+#cart-count{
+    position: absolute;
+    top: 5px;
+    right: 10px; 
+    background-color: red;
+    border-radius: 3px;
+    color: blue;
+    padding: 4px 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#cart-total-label
+{
+    margin: 10px;
+}
+#cart-header
+{
+    margin: 10px;
+}
+#cart-total-amount
+{
+    margin: 5px;
+}
+.text-center
+{
+    text-align:center;
+    margin:10px 10px 20px 10px;
+}
+.checkout,.removeAll
+{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 6px;
+}
+.HomeBtn
+{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 6px;
+}
+.bi-x-lg
+{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    top: -40px;
+    right: -40px;
+}
+.shopping-cart
+{
+    display: grid;
+    grid-template-columns: repeat(1,400px);
+    justify-content: center;
+    gap: 15px;
+}
+.cart-item
+{
+    border: 2px solid;
+    border-color: black;
+    border-radius: 5px;
+    display: flex;
+}
+.title-price-y
+{
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+.title-price
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.extra
+{
+    align-items: center;
+}
+.bi-dash-lg
+{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+.bi-plus
+{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+.buttons
+{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px 20px 10px;
+}
+.cart-item-price {
+    background-color: #212529;
+    border-radius: 4px;
+    padding: 3px 6px;
+  }
+  .total
+  {
+    align-items: center;
+  }

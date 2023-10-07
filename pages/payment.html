@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../pages/cart.html"></script>
+</head>
+<body style="background-color: rgb(7, 240, 77)">
+    <header id="sc" >
+        <li class="logo"><span class="logo-text" style="font-size: 2em;font-style: italic">Shop</span><span class="logo-text"style=" font-size: 2em; color:rgb(236, 129, 15)">Swift</span></li>
+        <li style="font-size: 1em"><a href="../pages/index.html">HOME</a></li>
+    </header> 
+    <section id="py">
+        <form style="color: black;background-color: white" action="billing.php">
+            <h2 style="color: blue;margin: 20px">Billing address</h2>
+            <div class="inputBox">
+                <span>Full name :</span>
+                <input id="fullname" type="text"> 
+            </div>
+            <div class="inputBox">
+                <span>Email :</span>
+                <input id="email" type="email"> 
+            </div>
+            <div class="inputBox">
+                <span>Address :</span>
+                <input id="address" type="text"> 
+                </div>
+            <div class="inputBox">
+                <span>City :</span>
+                <input id="city" type="text"> 
+            </div>
+            <div class="inputBox">
+                <span>Country :</span>
+                <input id="country" type="text"> 
+            </div>
+            <div class="inputBox">
+                <span>Zip code:</span>
+                <input id="code" type="text"> 
+            </div>
+        </form>
+        <form style="color: black; background-color: white" action="process_payment.php" method="post">
+            <h3 style="color: blue;margin: 20px">Payment Information</h2>
+            <div class="debit">
+                <span>Payment option</span>
+                <img id="visa" src="../New/IMG_20231005_151802.jpg">
+            </div>   
+            <div class="debit">
+                <span>Full card name:</span>
+                <input type="text" id="card-name" name="card-name" required>
+            </div>
+            <div class="debit">
+                <span>Card Number:</span>
+                <input type="text"  id="card-number" maxlength="16" required>
+            </div>
+            <div class="debit">
+                <span>Expiration Month:</span>
+                <select name="month"id="mm" class="month-input">
+                    <option value="month" selected disabled>month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div name="year" class="debit">
+                <span>Expiration year:</span>
+                <select  id="year" class="year-input">
+                    <option value="year" selected disabled>year</option>
+                    <option value="2031">2031</option>
+                    <option value="2030">2030</option>
+                    <option value="2029">2029</option>
+                    <option value="2028">2028</option>
+                    <option value="2027">2027</option>
+                    <option value="2026">2026</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+            <div class="debit">
+                <span >CVV:</span>
+                <input id="cvv" type="text" maxlength="4" name="cv" required>
+            </div>
+            <div class="debit">
+                <span id="amount">Amount:</span>
+                <input type="text" required>
+            </div>
+            <div class="debit">
+                <button id="submit" type="submit">Pay Now</button>
+            </div>
+        </form>
+    </section>
+    <script src="../Js/payment.js"></script>
+</body>
+<footer>
+        <h>123 Mfangano street Nairobi,Kenya<h/>
+            <p>Email:shopswift19@gmail.com</p>
+            <p>Phone:+254 791-501-390</p>
+        <l2><l2><p>&copy; 2023 Carlos Productions Ltd.All rights reserved.</p></l2></l2>
+</footer>
+</html>

@@ -1,0 +1,343 @@
+body
+{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header
+{
+    padding:  10px 15px;
+    background-color: gray;
+    background-size: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    color: blue;
+    word-spacing: -9px;
+    margin: 0;
+}
+header .mobile
+{
+    display: none;
+}
+a
+{
+    display: inline-block;
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li
+{
+    display: inline;
+    margin-right: 20px;
+    align-items: center;
+}
+/*RESPONSIVE RULES*/
+
+@media screen and (max-width: 715px) 
+{
+    header
+    {
+        height: 200px;
+    }
+    header .mobile
+    {
+        display: inline-block;
+    }
+    header .desktop
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    body
+    {
+        font-size: 15px;
+    }
+}
+header .mobile
+{
+    display: none;
+}
+ul
+{
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+li
+{
+    display:inline-block ;
+    margin: 0 15px 0 15px;
+}
+.small-icon
+{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-top: -4px;
+    cursor: pointer;
+}
+li:hover
+{
+    background-color:  none;
+}
+a
+{
+    text-decoration: none;
+    color:blue;
+    font-weight: 600;
+}
+a:hover
+{
+    text-decoration: underline;
+    background-color: white;
+}
+section
+{
+    background: white;
+    color: blue;
+    font-size: 12px;
+    display: inline-block;
+    float:none;
+}
+footer
+{
+    position: relative;
+    z-index: 1;
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 20px 80px;
+    text-align: center;
+    height: 130px;
+}
+button
+{
+    border-radius: 5px;
+    background-color: rgb(7, 240, 77);
+    color: blue;
+    font-size:1.2em;
+    font-weight: 600;
+    text-align: right;
+}
+button:hover
+{
+    background-color: rgb(236, 129, 15);
+}
+.clearfix
+{
+    display: flex;
+    direction: right;
+    justify-content: center;
+}
+.item
+{
+    border: 1px solid black;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 0 0 20px 0;
+    text-align: center;
+    max-width: 300px;
+    min-height: 350px;
+    display:inline-block;
+    gap: 60px;
+}
+.gallery
+{
+    display:flex;
+    margin-bottom: 30px;
+}
+img
+{
+    width: 100%;
+}
+#new
+{
+    width: 100;
+    height: 60%;
+}
+#data-price
+{
+    font-weight:bold;
+    color: blue;
+    padding: 5px;
+}
+.buttons
+{
+    display: flex;
+    justify-content: right;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bi-dash
+{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+.bi-plus
+{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+.price-quantity
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews 
+{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.item:hover
+{
+    background-color:rgb(236, 129, 15);
+}
+#add-to-cart-button
+{
+    background-color: rgb(16, 142, 252);
+    color: black;
+    border: none;
+    padding: 5;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+#add-to-cart-button:hover
+{
+    background-color: blue;
+}
+#cart-count{
+    position: absolute;
+    top: 15px;
+    right: 50px; 
+    background-color: red;
+    border-radius: 3px;
+    color: blue;
+    padding: 4px 8px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.bi-person-circle
+{
+    font-size: 25px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+.description
+{
+    margin: 10px;
+    color: blue;
+    font-size:0.9em;
+}
+.Add-info
+{
+    margin: 10px;
+    color: blue;
+    font-size:0.9em;
+    display: flex;
+    flex-direction: column;   
+}
+.menu icon {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.nav-menu {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+    .bi-person-circle
+    {
+        font-size: 25px;
+        position: absolute;
+        top: 90px;
+        right: 10px;
+    }
+    #cart-count{
+        position: absolute;
+        top: 85px;
+        right: 55px; 
+        background-color: red;
+        border-radius: 3px;
+        color: blue;
+        padding: 4px 8px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+
+/* styles.css */
+
+/* Style for the title page container */
+.title-page {
+    text-align: center;
+    margin: 100px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    max-width: 600px;
+    background-color: #f0f0f0;
+}
+
+/* Style for the document title */
+.title-page h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Style for the author name */
+.title-page p:nth-child(2) {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Style for the date */
+.title-page p:nth-child(3) {
+    font-size: 16px;
+    color: #777;
+}
+.shop
+{
+    /*align-items: center;*/
+    display: inline;
+}
